@@ -1,0 +1,1 @@
+Hone o exercício do dia consiste em fazer uma pasta de exercícios do dia, logo estou fazendo ela e editando.
