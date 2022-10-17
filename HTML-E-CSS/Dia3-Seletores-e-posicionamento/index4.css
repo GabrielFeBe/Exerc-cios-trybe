@@ -1,0 +1,28 @@
+div:hover {
+    border: 1px solid red;
+    width:fit-content;
+    height: auto;
+}
+.div1 {
+    color: blue;
+}
+.div2 {
+    color: black;
+}
+.div3 {
+    color: yellow;
+    font-size: 40px;
+}
+.div4 {
+    color: purple;
+}
+.div5 {
+    color: brown;
+}
+h3 {
+    font-size: 30px;
+    text-decoration: underline;
+}
+    .div5, .div1, .div3 {
+        font-style: italic;
+    }
