@@ -1,0 +1,52 @@
+ol {
+    background-color: yellow;
+}
+ .ol2, .ol4 {
+    color: green;
+ }
+ .ol1, .ol3, .ol5 {
+    text-transform:uppercase;
+ }
+ h1, h2, h3, h4, h5, h6 {
+    color: red;
+
+ }
+ h1 {
+    font-size: 40px;
+    border: 1px solid black;
+ }
+ li {
+    font-size: 20px;
+
+ }
+ li em {
+    font-weight: bold;
+ }
+ .ul1, .ul2, .ul3 {
+    color: blue;
+
+ }
+ .ul2, .ul3 {
+    background-color: pink;
+ }
+ .trybe:hover {
+    font-weight: bold;
+    background-color: green;
+
+ }
+ .devdocs:hover {
+    font-weight: bold;
+    background-color: yellow;
+ }
+ .webschools:hover {
+    font-weight: bold;
+    background-color: green;
+ }
+ .mdn:hover {
+    background-color: black;
+    font-weight: bold;
+}
+.stackoverflow:hover {
+    background-color: orange;
+    font-weight: bold;
+}
