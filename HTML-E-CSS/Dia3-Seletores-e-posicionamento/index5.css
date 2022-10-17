@@ -30,23 +30,23 @@ ol {
     background-color: pink;
  }
  .trybe:hover {
-    font-weight: bold;
-    background-color: green;
+   font-weight: bold;
+   color: green;
 
  }
  .devdocs:hover {
-    font-weight: bold;
-    background-color: yellow;
+   font-weight: bold;
+   color: yellow;
  }
  .webschools:hover {
-    font-weight: bold;
-    background-color: green;
+   font-weight: bold;
+   color: green;
  }
  .mdn:hover {
-    background-color: black;
-    font-weight: bold;
+   color: black;
+   font-weight: bold;
 }
 .stackoverflow:hover {
-    background-color: orange;
-    font-weight: bold;
+   color: orange;
+   font-weight: bold;
 }
