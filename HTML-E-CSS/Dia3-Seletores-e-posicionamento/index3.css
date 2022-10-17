@@ -1,0 +1,18 @@
+h1, p {
+    text-align: center;
+}
+ol {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+    }
+   li:hover {
+    background-color: aqua;
+    list-style: none;    
+   }
+    li:active {
+    color: red;
+    list-style: none;
+   }
