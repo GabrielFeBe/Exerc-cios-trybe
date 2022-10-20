@@ -123,3 +123,44 @@ if (numeroImpar1 % 2 !== 0 || numeroImpar2 % 2 !== 0 || numeroImpar3 % 2 !== 0 )
     valid = false;
     console.log(valid);
 }
+
+const custoT = 100;
+const vendaVal = 200;
+let valorCustoTotal = (custoT * 20 / 100) + custoT
+let lucro;
+if (custoT < 0 || vendaVal < 0 || valorCustoTotal < 0) {
+    console.log('AZEDOU, QUEBRAMOS!!!!')
+} else {
+    lucro = (vendaVal - valorCustoTotal) * 1000;
+    console.log(lucro)
+}
+
+let salarioBruto = 3000000;
+let salarioINSS;
+let salario;
+if (salarioBruto > 5189.82) {
+    salarioINSS = salarioBruto - 570.88;
+    console.log(salarioINSS)
+} else if (salarioBruto >= 2594.93 && salarioBruto < 5189.82) {
+    salarioINSS = salarioBruto - (salarioBruto * 0.11);
+} else if (salarioBruto >= 1556.95 && salarioBruto < 2594.93) {
+    salarioINSS = salarioBruto - (salarioBruto * 0.09);
+} else if (salarioBruto >= 0 && salarioBruto < 1556.95) {
+    salarioINSS = salarioBruto - (salarioBruto * 0.08);
+}
+if (salarioINSS > 4664.68) {
+    salario = salarioINSS - (salarioINSS * 0.275 - 869.36);
+    console.log(salario);
+} else if (salarioINSS >= 3751.06 && salarioINSS < 4664.68) {
+    salario = salarioINSS - (salarioINSS * 0.225 - 636.13);
+    console.log(salario)
+} else if (salarioINSS >= 2826.66 && salarioINSS < 3751.06) {
+    salario = salarioINSS - (salarioINSS * 0.15 - 354.80);
+    console.log(salario);
+} else if (salarioINSS >= 1903.99 && salarioINSS < 2826.65) {
+    salario = salarioINSS - (salarioINSS * 0.075 - 142.80);
+    console.log(salario);
+} else if (salarioINSS < 1903.98) {
+    salario = salarioINSS + 0;
+    console.log(salario);
+}
