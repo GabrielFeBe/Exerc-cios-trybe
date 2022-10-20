@@ -51,3 +51,75 @@ if (lado1 < 0 || lado2 < 0 || lado3 < 0) {
 
     console.log(triangulo);
 } 
+
+let answer='alberto'
+answer = answer.toLowerCase();
+switch(answer) {
+    case 'king':
+        console.log('The King moves from its square to a neighboring square');
+        break;
+    case 'bishop':
+        console.log('the Bishop moves diagonally');
+        break;
+    case 'queen':
+        console.log('the Queen may move like a Rook or a Bishop,');
+        break;
+    case 'knight':
+        console.log('the Knight jumps in making the shortest move that is not a straight one, and.');
+        break;
+    case 'pawn':
+        console.log('the Pawn moves one square straight ahead.');
+        break;
+    case 'rook':
+        console.log('the Rook can move in its line or row,');
+        break;
+    default:
+        console.log('ERROOOOOOOOOOOO!')                           
+}
+
+let porcent = -10;
+let notaLetra;
+if (porcent >= 90) {
+    notaLetra = 'A';
+    console.log(notaLetra);
+} else if (porcent >= 80 && porcent < 90) {
+    notaLetra = 'B';
+    console.log(notaLetra);
+} else if (porcent >= 70 && porcent < 80) {
+    notaLetra = 'C';
+    console.log(notaLetra);
+} else if (porcent >= 60 && porcent < 70) {
+    notaLetra = 'D';
+    console.log(notaLetra);
+} else if (porcent >= 50 && porcent < 60) {
+    notaLetra = 'E';
+    console.log(notaLetra);
+} else if (porcent < 50 && porcent >= 0) {
+    notaLetra = 'F';
+    console.log(notaLetra);
+} else {
+    console.log('ERROU, ERROU FEIO, ERROU RUDE!!!')
+}
+
+const numeroPar1 = 13;
+const numeroPar2 = 11;
+const numeroPar3 = 25;
+let valid;
+if (numeroPar1 % 2 === 0 || numeroPar2 % 2 === 0 || numeroPar3 % 2 === 0 ) {
+    valid = true;
+    console.log(valid);
+} else {
+    valid = false;
+    console.log(valid);
+}
+const numeroImpar1 = 20;
+const numeroImpar2 = 31;
+const numeroImpar3 = 20;
+let valid1;
+if (numeroImpar1 % 2 !== 0 || numeroImpar2 % 2 !== 0 || numeroImpar3 % 2 !== 0 ) {
+    valid = true;
+    console.log(valid);
+} else {
+    valid = false;
+    console.log(valid);
+}
