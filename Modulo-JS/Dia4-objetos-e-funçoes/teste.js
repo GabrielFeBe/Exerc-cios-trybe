@@ -57,3 +57,5 @@ let names = {
         return false;
     }
   }   console.log(triangulo(60, 60, 60));
+
+  
