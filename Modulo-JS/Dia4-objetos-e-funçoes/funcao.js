@@ -103,9 +103,13 @@ function compara(a) {
         }
         if (arrayComp1.length > arrayComp2.length) {
             maiorRep = arrayComp1[0];
-        } else {
+            return maiorRep;
+        } else if (arrayComp2.length > arrayComp1.length) {
             maiorRep = arrayComp2[0];
+            return maiorRep;
+        } else {
+            return console.log('números iguais ou programa bugou');
         }
-        return maiorRep;
+        
 }
 console.log(compara([4, 4, 4, 3, 2, 2, 8]));
