@@ -81,3 +81,94 @@
        
       }
       console.log(palvraLonga('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+
+
+      function highestCount(num) {
+        let biggest = num[0]
+        let contagem = 0;
+        for (let index = 0; index < num.length; index += 1) {
+          if (biggest < num[index]) {
+            biggest = num[index];
+          } 
+        } 
+        for (let index = 0;index < num.length; index += 1){
+          if (biggest === num[index]) {
+            contagem += 1;
+          }
+        }
+        return contagem;
+      }
+      console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+
+
+      let b = 1  
+      let a = 3
+     
+      console.log(dist);
+
+
+         
+    let caralho = [];
+    caralho.push('fizzBuzz');
+    console.log(caralho);
+
+
+    function encode(str) {
+      let isso = str.split('');
+      for (let index = 0; index < isso.length; index += 1) {
+        if (isso[index] === 'a') {
+          isso[index] = 1;
+        } else if (isso[index] === 'e') {
+          isso[index] = 2;
+        } else if (isso[index] === 'i') {
+          isso[index] = 3;
+        } else if (isso[index] === 'o') {
+          isso[index] = 4;
+        } else if (isso[index] === 'u') {
+          isso[index] = 5;
+        }
+      }
+      return isso.join('');
+      }
+      console.log(encode('hello'));
+
+      function techList(tel) {
+      if (tel !== 11) {
+        return 'Array com tamanho incorreto.';
+      } 
+      for (let index = 0; index < tel.length; index += 1) {
+        if (tel[index] < 0 || tel[index] > 9) {
+          return 'não é possível gerar um número de telefone com esses valores';
+        }
+      }
+
+      } 
+      console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript']));
+
+
+
+      function maisRepetido(numeros) {
+        let contRepetido = 0;
+        let contNumero = 0;
+        let indexNumeroRepetido = 0;
+      
+        for (let index in numeros) {
+          let verificaNumero = numeros[index];
+          for (let index2 in numeros) {
+            if (verificaNumero === numeros[index2]) {
+              contNumero += 1;
+            }
+          }
+          
+          if (contNumero > contRepetido) {
+            contRepetido = contNumero;
+            indexNumeroRepetido = index;
+          }
+          contNumero = 0;
+        }
+        
+        return numeros[indexNumeroRepetido];
+      }
+      
+      console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3, 3, 4, 5, 3])); // 2
