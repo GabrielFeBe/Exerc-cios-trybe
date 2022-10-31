@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        const body = document.querySelector('body');
+      let titulo = document.createElement('h1');
+      titulo.innerText = 'Exercício - JavaScript DOM';
+			titulo.className = 'title';
+      body.appendChild(titulo);
+      let main = document.createElement('main');
+      main.className = 'main-content';
+      body.appendChild(main);
+      let secao = document.createElement('section');
+      secao.className = 'center-content';
+      main.appendChild(secao);
+      let paragrafo = document.createElement('p');
+      paragrafo.innerText = 'Semíramis foi uma lendária rainha da Assíria e fundadora da Babilônia, conhecida de fontes gregas, armênias e judaicas. Lendas que descrevem Semíramis foram registradas por cerca de 80 escritores antigos';
+      secao.appendChild(paragrafo);
+      let secao2 = document.createElement('section');
+      secao2.className = 'left-content';
+      main.appendChild(secao2);
+      let secao3 = document.createElement('section');
+      secao3.className = 'right-content';
+      main.appendChild(secao3);
+      let imagem = document.createElement('img');
+      imagem.className = 'small-image';
+      imagem.src = "https://picsum.photos/200";
+      secao2.appendChild(imagem);
+      
+			const listaDeCria = document.createElement('ul');
+			secao3.appendChild(listaDeCria);
+
+      let arrayDeCria = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let i = 0; i < arrayDeCria.length; i += 1) {
+				if (i >= 8) {
+					break;
+				}
+        let liDeCria = document.createElement('li');
+				liDeCria.innerText = arrayDeCria[i];
+				listaDeCria.appendChild(liDeCria);
+      }
+
+      
+        for (let i = 1; i <= 3; i ++) {
+            let header3 = document.createElement('h3');
+            header3.innerText = 'abacate';
+						header3.className = 'description';
+            main.appendChild(header3);
+        }
+			 
+
+				const removerCri = document.querySelector('.left-content');
+				const oPai = removerCri.parentElement;
+				oPai.removeChild(removerCri);
+
+				const centralizar = document.querySelector('.right-content');
+				centralizar.style.marginRight = 'auto';
+
+				const secCentral = document.querySelector('.center-content');
+				const paiDaSecCentral = secCentral.parentElement;
+				paiDaSecCentral.style.backgroundColor = 'green';
+    </script>
+  </body>
+</html>
