@@ -19,3 +19,11 @@ let leitor = {
   });
   console.log(leitor.livrosFavoritos)
   console.log('Júlia tem ' + leitor.livrosFavoritos.length + ' livros favoritos');
+
+
+  let arrayV = [];
+  arrayV.push({
+    titulo: 'buceta',
+    vai: 'sefoder'
+  });
+  console.log(arrayV)
