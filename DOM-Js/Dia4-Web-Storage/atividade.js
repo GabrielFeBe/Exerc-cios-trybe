@@ -46,19 +46,6 @@ backYellow.addEventListener('click', (event) => {
     localStorage.setItem('bgcolor', 'yellow');
 })
 
-window.onload = () => {
-    let bgColor = localStorage.getItem('bgcolor');
-    textoT.style.backgroundColor = `${bgColor}`;
-    let fColor = localStorage.getItem('fcolor')
-    textoT.style.color = `${fColor}`;
-    let pixel = localStorage.getItem('pixel');
-    textoT.style.fontSize = `${pixel}`;
-    let space = localStorage.getItem('space');
-    textoT.style.lineHeight = `${space}`;
-    let font = localStorage.getItem('font');
-    textoT.style.fontFamily = `${font}`;
-}
-
 const fontB = document.getElementById('f-black');
 const fontR = document.getElementById('f-red');
 const fontW = document.getElementById('f-white');
@@ -169,5 +156,16 @@ roman.addEventListener('click', () => {
     textoT.style.fontFamily = 'Times New Roman';
 })
 
-
+window.onload = () => {
+    let bgColor = localStorage.getItem('bgcolor');
+    textoT.style.backgroundColor = `${bgColor}`;
+    let fColor = localStorage.getItem('fcolor')
+    textoT.style.color = `${fColor}`;
+    let pixel = localStorage.getItem('pixel');
+    textoT.style.fontSize = `${pixel}`;
+    let space = localStorage.getItem('space');
+    textoT.style.lineHeight = `${space}`;
+    let font = localStorage.getItem('font');
+    textoT.style.fontFamily = `${font}`;
+}
 
