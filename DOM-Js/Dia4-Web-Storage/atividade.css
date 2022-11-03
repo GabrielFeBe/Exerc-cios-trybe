@@ -1,0 +1,31 @@
+.fundo, .font, .font-s, .space, .type {
+    display: flex;
+    align-items: center;
+    
+    
+}
+h3 {
+    color: blueviolet;
+}
+#cor-font, #back-color {
+    display: inline-block;
+    align-items: baseline;
+    padding: 100px;
+}
+
+#font-size, #space-in, #font-type { 
+    display: inline-block;
+    align-items: baseline;
+    padding: 100px;
+    
+    
+}
+button {
+    padding: 1px;
+    width: 150px;
+    
+    
+}
+h1{
+    text-align: center;
+}
