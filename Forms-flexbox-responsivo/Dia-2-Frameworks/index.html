@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <!-- CSS only -->
+		<!-- <link rel="stylesheet" href="node_modules/datepickerx/dist/css/DatePickerX.min.css"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+  <form action="get">
+		<label for="Nome" class="form-label">Nome Completo
+			<input type="text" id="Nome" minlength="10" maxlength="40" class="form-control">
+		</label>
+		<br>
+		<label for="email-input" class="form-label">E-mail
+			<input type="email" name="email" id="email-input" minlength="10" maxlength="50" class="form-control">
+		</label>
+		<br>
+        <label for="montanha" class="form-check-label">
+			<input type="radio" name="local" id="montanha" class="form-check-input">
+			Montanhas</label>
+            <label for="praia" class="form-check-label">	
+			<input type="radio" name="local" id="praia" class="form-check-input">
+			Praia</label>
+
+		<label for="floresta" class="form-check-label">
+			<input type="radio" name="local" id="floresta" class="form-check-input">
+			Floresta
+		</label>
+        <label for="sertao" class="form-check-label">
+			<input type="radio" name="local" id="sertao" class="form-check-input">
+        Sertão</label>
+		<br>
+		<textarea name="resumo" id="resumo" cols="30" rows="10" placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?" maxlength="500" class="form-control"></textarea>
+		<br>
+		<label for="data">Data</label>
+		<input type="daytime-local" id="data">
+		<br>
+        <label for="concordo1" class="form-check-label">
+		<input type="checkbox" id="concordo1" class="form-check-input">
+		Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+		<br>
+        <label for="concordo2" class="form-check-label">
+		<input type="checkbox" id="concordo2" class="form-check-input">
+		Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+		<br>
+		<button type="submit" id="enviar" disabled class="btn">Enviar</button>
+		<button type="reset" class="btn btn-warning">Apagar</button>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+	const euSou = {
+		enableTime : true,
+		dateFormat : 'd-m-y H:i',
+		minDate    : '09-11-22'
+	}
+ flatpickr("input[type=daytime-local]", euSou);
+ </script>
+  <!-- <script src="node_modules/datepickerx/dist/js/DatePickerX.min.js"></script>
+  <script>
+	
+	document.getElementById('data').DatePickerX.init({
+		mondayFirst: true,
+        minDate    : new Date(2022, 11, 9),
+		maxDate    : new Date(2030, 5, 9),
+	});
+
+  </script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script>
+    var picker = new Pikaday({
+    field: document.getElementById('datepicker'),
+    format: 'D/M/YYYY',
+    toString(date, format) {
+        // you should do formatting based on the passed format,
+        // but we will just return 'D/M/YYYY' for simplicity
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    },
+    parse(dateString, format) {
+        // dateString is the result of `toString` method
+        const parts = dateString.split('/');
+        const day = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1;
+        const year = parseInt(parts[2], 10);
+        return new Date(year, month, day);
+    }
+});
+	picker.gotoToday()
+	
+	</script> -->
+	<script src="script.js">
+	</script>
+</body>
+</html>
