@@ -1,0 +1,115 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 5px;
+  }
+  body {
+    font-size: 18px;
+  }
+  article {
+  }
+  h1 {
+    font-size: x-large;
+  }
+  h2 {
+  }
+  img {
+      display: flex;
+      flex-wrap: wrap;
+      /* width: 400px; */
+			border-radius: 400px;
+			width: 80%;
+  }
+  main {
+    height: 100vh;
+  }
+  section {
+    display: flex;
+    height:100vh;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+  }
+  figure {
+    display: flex;
+      /* margin: 0; */
+			/* width: 400px; */
+			width: 45%;
+      flex-wrap: wrap;
+			flex-direction: column;
+			margin: 20px;
+			justify-content: center;
+			align-items: center;
+			border: 2px solid gray;
+			border-radius: 20px;
+  }
+  figcaption {
+    font-size: .8em;
+    /* margin-top: 40px; */
+		flex-shrink: 10;
+   
+  }
+
+  @media screen and (max-width: 600px) {
+    
+  }
+
+  @media screen and (min-width:600px) {
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+			background-color: gray;
+			font-size: 20px;
+		}
+		section {
+			display: flex;
+			height:100vh;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin-top: 0;
+		}
+		figure {
+			display: flex;
+				/* margin: 0; */
+				/* width: 400px; */
+				width: 40%;
+				flex-wrap: wrap;
+				flex-direction: column;
+				margin: 7px;
+				justify-content: center;
+				align-items: center;
+				/* border: 2px solid gray; */
+				/* border-radius: 20px; */
+		}
+		h1 {
+			margin-bottom: 10px;
+		}
+
+  }
+
+  @media screen and (min-width: 992px) {
+    body {
+			background-color: azure;
+		}
+
+		p {
+			max-width: 90%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+  }
