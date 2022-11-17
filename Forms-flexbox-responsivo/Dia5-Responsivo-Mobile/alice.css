@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 760px) {
+    
+	body {
+		max-width: 90%;
+		background-color: azure;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: x-large;
+    }
+
+		li {
+			font-size: 18px;
+			margin-left: 16px;
+		}
+  }
+
+	@media screen and (min-width:761px) and (max-width: 1000px) {
+		body {
+			background-color: gray;
+			color: azure;
+		}
+		p {
+			font-size: x-large;
+		}
+		li {
+			font-size: x-large;
+		}
+
+		nav ul {
+			display: flex;
+			justify-content: space-evenly;
+		}
+		
+		nav ul li {
+			padding: 30px;
+		}
+
+		header p {
+			text-align: center;
+			font-size: 30px;
+		}
+		article p {
+			max-width: 95%;
+		}
+	}
+
+	@media screen and (min-width: 1001px) {
+		body {
+			background-color:beige;
+		}
+		#caixa {
+			display: flex;
+			flex-direction: column;
+			/* padding: ; */
+			width: 29%;
+			font-size: 18px;
+		}
+
+		#caixa li {
+			margin-top: 20px;
+		}
+
+		article {
+			display: flex;
+			flex-direction: column;
+			width: 69%;
+			margin-right: 10px;
+		}
+
+		#grande-caixa {
+			display: flex;
+			flex-direction: row-reverse;
+			width: 100%;
+		}
+
+		footer {
+			border-top: 1px black solid;
+		}
+
+		.aside-two {
+			margin-top: 1000px;
+		}
+		header nav ul{
+			display:flex;
+			padding: 40px;
+			justify-content: space-evenly;
+		}
+		
+		nav ul li {
+			font-size: 20px;
+		}
+
+		header p {
+			text-align: center;
+			font-size: xx-large;
+			font-weight: bold;
+		}
+		
+	}
