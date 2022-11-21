@@ -23,16 +23,17 @@
       }
     }
     const testaNumber = (a, b) => {
-      if (typeof a !== 'number' || typeof b !== 'number') {
+      if (isNaN(a) || isNaN(b)) {
         throw new Error('must be a number');
       }
     }
-
     function sum() {
       try {
-        const value1 = document.getElementById('value1').value;
-        const value2 = document.getElementById('value2').value;
+        let value1 = document.getElementById('value1').value;
+        let value2 = document.getElementById('value2').value;
         testaAlgoEscrito(value1, value2);
+        value1 = parseInt(value1);
+        value2 = parseInt(value2);
         testaNumber(value1, value2);
         const result = Number(value1) + Number(value2);
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
