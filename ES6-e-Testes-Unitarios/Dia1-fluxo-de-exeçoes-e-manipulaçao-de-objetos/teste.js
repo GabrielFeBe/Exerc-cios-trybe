@@ -1,19 +1,19 @@
 const verify = (value1, value2) => {
   if (typeof value1 !== "number" || typeof value2 !== "number") {
-  throw new Error('value must be a number');
+    throw new Error('value must be a number');
   }
 };
 const sum = (value1, value2) => {
 
 
-try{
-  verify(value1,value2);
-  return value1 + value2;
-}
+  try {
+    verify(value1, value2);
+    return value1 + value2;
+  }
 
-catch(error) {
-  return error.message;
-}
+  catch (error) {
+    return error.message;
+  }
 }
 console.log(sum(10, 400));
 
@@ -55,7 +55,7 @@ const coutries = {
 const pairKeyValue = Object.entries(coutries);
 console.log(pairKeyValue);
 
-for(index in pairKeyValue) {
+for (index in pairKeyValue) {
   console.log('--------');
   console.log('País:', pairKeyValue[index][0]);
   console.log('Capital:', pairKeyValue[index][1]);
@@ -70,7 +70,7 @@ const student = {
 
 const listSkillsValuesWithFor = (student) => {
   const skills = [];
-  for(skill in student) {
+  for (skill in student) {
     skills.push(student[skill]);
   }
 
@@ -86,3 +86,11 @@ console.log(listSkillsValuesWithFor(student));
 
 // Com Object.values
 console.log(listSkillsValuesWithValues(student));
+
+
+// valores terminais =>
+// auto-disciplina, Polidez, Sabedoria
+
+// Valores instrumentais => 
+// Ambicioso, Capaz, Independente
+// Pathway Inf
