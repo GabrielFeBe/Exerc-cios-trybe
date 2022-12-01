@@ -81,7 +81,7 @@ const formatedBookNames = (livros) => {
 // console.log(formatedBookNames(books));
 
 const autoresDataNome = books.map((elemento) => `${elemento.author.name} - ${elemento.author.birthYear}`);
-console.log(autoresDataNome);
+// console.log(autoresDataNome);
 
 const expectedResult1 = [
   'George R. R. Martin - 1948',
@@ -96,7 +96,7 @@ const formatedAuthorNamesBirth = (autores) => {
   // escreva seu código aqui
   return autores.map((elemento) => `${elemento.author.name} - ${elemento.author.birthYear}`);
 }
-console.log(formatedAuthorNamesBirth(books));
+// console.log(formatedAuthorNamesBirth(books));
 
 const expectedResult3 = [
   {
@@ -136,4 +136,6 @@ const nameAndAge = (arr) => {
     }
   }).sort((a, b) => a.age - b.age);
 }
-console.log(nameAndAge(books));
+// console.log(nameAndAge(books));
+
+module.exports = { nameAndAge, expectedResult3, books }
